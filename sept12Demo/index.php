@@ -1,4 +1,15 @@
-<h1>Hello from Mik's php</h1>
+<?php
+function CreateMessage ($original_Message)
+{
+
+    $new_massage="<h6>From function: $orginal_message</h6>";
+    return $new_message;
+}
+?>
+
+<h1>HNew message from Mik's php</h1>
+
+
 
 <?php
 /**
@@ -15,6 +26,7 @@ echo "<p> praragraph text</p>";
 <?php
 $message="Hello my";
 $target="world";
+$message= createMessage ("goodbye, Cruel");
 
 echo "<h5> $message, $target</h5>"
 ?>
