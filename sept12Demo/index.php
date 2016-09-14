@@ -13,7 +13,7 @@ echo "<p> praragraph text</p>";
 <h2> not a good ideaphp</h2>
 
 <?php
-$message="Hello";
+$message="Hello my";
 $target="world";
 
 echo "<h5> $message, $target</h5>"
