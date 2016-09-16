@@ -16,7 +16,7 @@
             $message = "Guess Lower";
         } elseif ($numberGuessed == $numberTarget)
         {
-            $message = "You got it!";
+            $message = "You got it right!";
         }
     }
     else
