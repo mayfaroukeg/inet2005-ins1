@@ -83,6 +83,17 @@ echo $result3;
     echo $result4;
 
 ?>
+    <?php
 
+		for($counter=10; $counter >= 1; $counter-- )
+        {
+            echo "<p>  " . $counter . " </p>";
+        }
+
+
+    ?>
+<p>
+    blast off
+    </p>
 </p>
 </body>
