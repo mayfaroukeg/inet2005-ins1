@@ -95,5 +95,64 @@ echo $result3;
 <p>
     blast off
     </p>
+
+<?php
+// creating $Provinces[] array
+$colors = array(
+		“red”,
+		“black”,
+		“yellow”,
+		“pink”,
+		“blue”,
+		“brown”,
+		“green”,
+
+		);
+
+
+print_r ($colors);
+
+?>
+
+
+<?php
+// creating $Provinces[] array
+$colors = array(
+		“red”,
+		“black”,
+		“yellow”,
+		“pink”,
+		“blue”,
+		“brown”,
+		“green”,
+
+		);
+
+
+	// printing $Provinces[] array which was already created
+
+    // uses count() method
+   for($counter=0; $counter < count($colors); $counter++ )
+   {
+       echo "<h1>$colors[$counter]</h1>";
+   }
+
+
+
+	// printing $Provinces[] array which was already created
+
+   foreach ($colors as $ColorNumber => $clr)
+   {
+       echo "<h1>$colors $ColorNumber is $clr</h1>";
+   }
+
+
+?>
+
+
+
+
+
+
 </p>
 </body>
