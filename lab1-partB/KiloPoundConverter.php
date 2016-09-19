@@ -35,5 +35,8 @@ else
 }
 ?>
 <p><a href="KiloPoundForm.html">Go back.</a></p>
+
+<p> this is a kilo pound converter</p>
 </body>
+
 </html>
