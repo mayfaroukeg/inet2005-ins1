@@ -10,7 +10,16 @@
 $poundsResult = 0;
 $kilosResult = 0;
 
-if (isset($_POST['pounds']) && $_POST['pounds']!='')
+if (isset($_POST['kilos']) && $_POST['kilos']!='' )
+{
+
+	$kilosResult = $_POST['kilos'];
+
+	$poundsResult = $kilosResult * 2.2;
+
+	echo "<p>" . $kilosResult . " kilos equals "  . $poundsResult . " pounds.</p>";
+}
+elseif (isset($_POST['pounds']) && $_POST['pounds']!='')
 {
 
 	$poundsResult = $_POST['pounds'];
@@ -20,23 +29,11 @@ if (isset($_POST['pounds']) && $_POST['pounds']!='')
 	echo "<p>" . $poundsResult . " pounds equals " . $kilosResult . " kilos.</p>";
 
 }
-elseif (isset($_POST['kilos']) && $_POST['kilos']!='' )
-{
-
-	$kilosResult = $_POST['kilos'];
-
-	$poundsResult = $kilosResult * 2.2;
-
-	echo "<p>" . $kilosResult . " kilos equals "  . $poundsResult . " pounds.</p>";
-}
 else
 {
 	echo "<p>Nothing to do.</p>";
 }
 ?>
 <p><a href="KiloPoundForm.html">Go back.</a></p>
-
-<p> this is a kilo pound converter</p>
 </body>
-
 </html>
