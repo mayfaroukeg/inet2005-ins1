@@ -1,0 +1,98 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font: 12px/1.4 Georgia, Serif; 
+}
+#page-wrap {
+	margin: 50px;
+}
+p {
+	margin: 20px 0; 
+}
+
+a {
+    padding: 0 2px 1px 15px;
+    color: darkblue;
+}
+
+a:link {
+    padding: 0 2px 1px 15px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+a:visited {
+    color: royalblue;
+}
+a:hover {
+    color: red;
+}
+.error {color: #FF0000;}
+
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	table { 
+		width: 50%; 
+		border-collapse: collapse; 
+		margin-left:auto; 
+		margin-right:auto;
+	}
+	
+	th { 
+		background: palevioletred;
+		color: dodgerblue;
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+	
+	fieldset {
+		width: 50%;
+		display: block;
+		margin-left:auto; 
+		margin-right:auto;
+		padding-top: 0.35em;
+		padding-bottom: 0.610em;
+		
+		
+	} 
+
+	.add{
+		position:absolute; 
+		top:1060px;
+		left:650px;
+		width:200px; 
+		height:25px;
+	}
+	
+	/* footer */
+	.footer {
+
+	  color: black;
+	  margin: 0 auto 10px auto;
+	  width: 650px;
+	  text-align: center;
+	  background: #F8F7F7;
+	  border-top: 1px solid #F2F2F2;
+	}
+
+
+    span{
+        color: red;
+    }
+
+.logout{
+    position:absolute;
+    top:10px;
+    right: 10px;
+}
+
+	
+	
+
