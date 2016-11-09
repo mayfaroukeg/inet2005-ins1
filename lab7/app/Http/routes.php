@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $people =['Tylor', 'Matt', 'Geffery'];
+    return view('welcome', compact ('people'));
+});
+
+
+
+Route::get('about', function () {
+    return view('pages.about'); //look in resources/views for a file called about.blade.php
 });

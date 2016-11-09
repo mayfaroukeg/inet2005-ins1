@@ -1,0 +1,32 @@
+table {
+    font-family: "Lato","sans-serif";
+    border:1px solid black;
+}       /* added custom font-family  */
+
+td {
+    text-align: center;
+    width: 10em;
+    padding: 1em;
+    border:1px solid black;
+}
+
+th {                              /* removed the border from the table heading row  */
+    text-align: center;
+    padding: 1em;
+    background-color: #e8503a;       /* added a red background color to the heading cells  */
+    color: white;
+    border:1px solid black;         /* added a white font color to the heading text */
+}
+
+tr {
+    height: 1em;
+    border:1px solid black;
+}
+
+table tr:nth-child(even) {            /* added all even rows a #eee color  */
+    background-color: blue;
+}
+
+table tr:nth-child(odd) {           /* added all odd rows a #fff color  */
+    background-color:#fff;
+}

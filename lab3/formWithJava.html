@@ -1,0 +1,95 @@
+<html>
+<head>
+
+
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="formCss.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>This is a form</h1>
+<form name="myForm" onsubmit="return(validate());">
+
+    <label type="text" id="label"> First name</label>
+    <br>
+    <input type="text" name="firstName" id="textBox1"  onfocus="inputFocus1()"><br>
+    <label type="text" id="label"> Last name</label>
+    <br>
+    <input type="text" name="lastName" id="textBox2"   onfocus="inputFocus2()"><br>
+
+    <label type="text" id="label"> Address1</label>
+    <br>
+    <input type="text" name="adress1" id="textBox"   onfocus="inputFocus1()"><br>
+
+    <label type="text" id="label"> Adress2</label>
+    <br>
+    <input type="text" name="adress2" id="textBox"   onfocus="inputFocus2()"><br>
+
+    <label type="text" id="label"> Email</label>
+
+    <br>
+    <input type="email" name="email" id="textBox"   onfocus="inputFocus()"><br>
+    <input type="checkbox" name="terms"  id="terms"  >Accept terms and conditions<br>
+
+    <button type="submit" onsubmit="validateForm()"> Submit</button>  <br>
+</form>
+
+</body>
+
+
+<script type="text/javascript">
+    <!--
+    // Form validation code will come here.
+    function validate()
+    {
+
+        if( document.myForm.firstName.value == "" )
+        {
+            alert( "Please provide your first name!" );
+            document.myForm.firstName.focus() ;
+            return false;
+        }
+
+        if( document.myForm.lastName.value == "" )
+        {
+            alert( "Please provide your Last Name!" );
+            document.myForm.lastName.focus() ;
+            return false;
+        }
+
+        if( document.myForm.adress1.value == "" )
+        {
+            alert( "Please provide your Adress1!" );
+            document.myForm.adress1.focus() ;
+            return false;
+        }
+
+        if( document.myForm.adress2.value == "" )
+        {
+            alert( "Please provide your Adress2!" );
+            document.myForm.adress2.focus() ;
+            return false;
+        }
+
+        if( document.myForm.email.value == "" )
+        {
+            alert( "Please provide your Emsil!" );
+            document.myForm.email.focus() ;
+            return false;
+        }
+
+        if(!this.myForm.terms.checked)
+        {
+            alert('You must agree to the terms first.');
+            return false;
+        }
+
+        return( true );
+    }
+
+
+
+    //-->
+</script>
+</html>
