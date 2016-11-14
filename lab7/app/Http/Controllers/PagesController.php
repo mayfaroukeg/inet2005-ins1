@@ -19,7 +19,7 @@ class PagesController extends Controller
     function about ()
     {
 
-        return 'About page';
+        return  view ('about');
 
     }
 
