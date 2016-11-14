@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-  $people =['Tylor', 'Matt', 'Geffery'];
-    return view('welcome', compact ('people'));
-});
 
 
 
-Route::get('about', function () {
-    return view('pages.about'); //look in resources/views for a file called about.blade.php
-});
+//Route::get('about', function () {
+    //return view('pages.about'); //look in resources/views for a file called about.blade.php
+//});
+
+
+Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
