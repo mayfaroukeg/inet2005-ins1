@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Controllers\Controller;
+
+class CardsController extends Controller
+{
+    /**
+     * @return string
+     */
+    public function index()
+    {
+        return view ('cards.index') ;
+    }
+}
