@@ -20,3 +20,5 @@ class Note extends Model
         return $this->belongsTo(User::class);
     }
 }
+
+//this is a comment to mark end of video 10
